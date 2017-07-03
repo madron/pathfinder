@@ -46,7 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-      ENV.emberPouch.remoteDb: 'http://localhost:5984/my_couch';
+      ENV.emberPouch.remoteDb = 'http://localhost:5984/my_couch';
   }
 
   return ENV;
