@@ -16,6 +16,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    emberPouch: {
+        localDb: 'test',
+        remoteDb: 'http://localhost:5984/my_couch'
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
