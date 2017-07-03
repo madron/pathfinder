@@ -17,8 +17,7 @@ module.exports = function(environment) {
       }
     },
     emberPouch: {
-        localDb: 'test',
-        remoteDb: 'http://localhost:5984/my_couch'
+        localDb: 'pathfinder'
     },
 
     APP: {
@@ -47,7 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+      ENV.emberPouch.remoteDb: 'http://localhost:5984/my_couch';
   }
 
   return ENV;
