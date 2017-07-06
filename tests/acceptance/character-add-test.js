@@ -9,6 +9,6 @@ test('visiting /character-add', function(assert) {
   andThen(function() {
     assert.equal(currentURL(), '/character/add');
     assert.equal(find('h1:first').text(), 'Add character');
-    assert.equal(find('a.character-index').text().trim(), 'Cancel');
+    assert.equal(find('a.character-index').text().trim(), 'Characters');
   });
 });
