@@ -9,5 +9,6 @@ test('visiting /character', function(assert) {
   andThen(function() {
     assert.equal(currentURL(), '/character');
     assert.equal(find('ul.character-list li:first').text(), 'Keroban');
+    assert.equal(find('a.character-add').text().trim(), 'Add');
   });
 });

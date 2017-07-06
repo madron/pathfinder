@@ -12,11 +12,11 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{character-list}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Add');
 
   // Template block usage:
   this.render(hbs`
     {{character-list title="Characters" character_list=model}}
   `);
-  assert.equal(this.$().text().trim(), 'Characters');
+  assert.equal(this.$().find("h1").text().trim(), 'Characters');
 });
