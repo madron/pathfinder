@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model() {
-      return ['Keroban', 'Randill'];
+        return this.get('store').findAll('character');
     }
 });

@@ -32,6 +32,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.emberPouch.remoteDb = 'http://localhost:5984/pathfinder';
   }
 
   if (environment === 'test') {
@@ -46,7 +47,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-      ENV.emberPouch.remoteDb = 'http://localhost:5984/my_couch';
+      ENV.emberPouch.remoteDb = 'http://localhost:5984/pathfinder';
   }
 
   return ENV;

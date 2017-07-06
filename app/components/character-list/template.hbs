@@ -5,7 +5,7 @@
 <div>
     <ul class="character-list">
       {{#each character_list as |character|}}
-        <li>{{character}}</li>
+        <li>{{character.name}}</li>
       {{/each}}
     </ul>
     {{#link-to "character.add" class="character-add"}}Add{{/link-to}}
